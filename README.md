@@ -331,11 +331,7 @@ The analytical pressure is expressed as a ratio to stagnation pressure because t
 
 Detailed numerical comparison is provided in:
 
-`CD_Nozzle_Theory_vs_CFD.xlsx`
-
-The analytical calculations are documented in:
-
-`CD_Nozzle_Calculations_Analytical.pdf`
+`CD nozzle Theoretical vs CFD.xlsx`
 
 ---
 
