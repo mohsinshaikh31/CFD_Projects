@@ -1,63 +1,28 @@
-## Analytical Validation
+# Computational Analysis of a Converging-Diverging Nozzle
 
-The theoretical solution was obtained using ideal-gas, quasi-one-dimensional isentropic-flow relations.
+## Overview
 
-### 1. Area Ratio
+A computational fluid dynamics (CFD) study of compressible flow through a two-dimensional converging-diverging nozzle using ANSYS Fluent.
 
-$$
-A_t = \frac{\pi D_t^2}{4}
-$$
+The objective is to investigate the acceleration of compressible flow from subsonic to supersonic conditions and compare the CFD results with analytical isentropic-flow theory.
 
-$$
-A_e = \frac{\pi D_e^2}{4}
-$$
+---
 
-$$
-\frac{A_e}{A_t}=2.25
-$$
+## Objectives
 
-### 2. Exit Mach Number
+- Model compressible flow through a converging-diverging nozzle.
+- Study Mach number, velocity, pressure and temperature variations.
+- Investigate choking and sonic conditions at the throat.
+- Compare CFD predictions with analytical isentropic-flow calculations.
+- Evaluate the agreement between CFD and theoretical results.
 
-$$
-M_e \approx 2.20
-$$
+---
 
-### 3. Exit Temperature
+## Physical Model
 
-$$
-T_e =
-\frac{T_0}
-{1+\frac{\gamma-1}{2}M_e^2}
-$$
+The working fluid is air, modeled as an ideal gas.
 
-$$
-T_e \approx 152.4\ K
-$$
+For steady flow, conservation of mass is expressed as:
 
-### 4. Exit Velocity
-
-$$
-a_e=\sqrt{\gamma R T_e}
-$$
-
-$$
-V_e=M_ea_e
-$$
-
-$$
-V_e\approx544.5\ m/s
-$$
-
-### 5. Exit Pressure
-
-$$
-\frac{P_e}{P_0}
-=
-\left[
-1+\frac{\gamma-1}{2}M_e^2
-\right]^{-\frac{\gamma}{\gamma-1}}
-$$
-
-$$
-\frac{P_e}{P_0}\approx0.0935
-$$
+```math
+\dot{m} = \rho A V = \text{constant}
